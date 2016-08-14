@@ -1,16 +1,18 @@
 const {app, BrowserWindow} = require('electron')
-let window
+let mainWindow
 
-function createWindow () {
-    window = new BrowserWindow({width: 900, height: 600})
-    window.loadURL(`file://${__dirname}/index.html`)
-    
-    window.on('closed', () =>{
-        window = null
-    })
+function createWindow() {
+  mainWindow = new BrowserWindow({ width: 1024, height: 768 })
+  mainWindow.loadURL(`file://${__dirname}/index.html`)
+
+  mainWindow.webContents.openDevTools('bottom');
+
+  mainWindow.on('closed', () => {
+    mainWindow = null
+  })
 }
 
-app.on('ready',createWindow)
+app.on('ready', createWindow)
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
