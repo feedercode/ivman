@@ -1,0 +1,10 @@
+<template>
+    <div class="col-md-6 product-list">
+        <ul class="list-group">
+            <li>Hello world</li>
+            <li class="list-group-item" repeat.for="product of products">
+                <span class="badge">${product.quantity}</span> ${product.name}
+            </li>
+        </ul>
+    </div>
+</template>
