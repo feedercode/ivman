@@ -1,0 +1,10 @@
+<template>
+    <h1>Add Products</h1>
+    <form class="form-inline" submit.trigger="addProduct()">
+        <div class="form-group">
+            <label for="product" class="sr-only">Product</label>
+            <input type="text" class="form-control" value.bind="productName" id="inputProductName" placeholder="Product name">
+            <input type="text" class="form-control" value.bind="productCount" id="inputCount" placeholder="Count" </div>
+            <button type="submit" class="btn btn-default">Add New</button>
+    </form>
+</template>
