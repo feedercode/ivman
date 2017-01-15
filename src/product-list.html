@@ -3,7 +3,7 @@
         <ul class="list-group">
             <li class="list-group-item" repeat.for="product of products">
                 <span class="badge">${product.quantity}</span> ${product.name}
-                <!--<button type="button" click.trigger="removeItem(<product class="id toString"></product>)" class="btn btn-default">Delete</button>-->
+                <!--<button type="button" click.trigger="removeItem(product)" class="btn btn-default">Delete</button>-->
             </li>
         </ul>
     </div>
