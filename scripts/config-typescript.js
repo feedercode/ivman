@@ -5,7 +5,7 @@ System.config({
     "experimentalDecorators": true
   },
   map: {
-    typescript: 'https://cdnjs.cloudflare.com/ajax/libs/typescript/1.9.0/typescript.min.js'
+    typescript: './scripts/typescript.min.js'
   },
   packages: {
     "src": {
